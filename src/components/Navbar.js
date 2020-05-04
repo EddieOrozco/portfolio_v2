@@ -1,15 +1,16 @@
 import React from 'react';
+import '../components/styles/nav.scss';
 
 function Navbar(props) {
   return (
     //  Navigation
-    <nav class='navbar navbar-expand-lg navbar-dark fixed-top' id='mainNav'>
-      <div class='container'>
-        <a class='navbar-brand js-scroll-trigger' href='#page-top'>
-          <img src='assets/img/navbar-logo.svg' />
+    <nav className='navbar navbar-expand-lg navbar-dark fixed-top' id='mainNav'>
+      <div className='container'>
+        <a className='navbar-brand js-scroll-trigger' href='#page-top'>
+          <img src='assets/img/navbar-logo.svg' alt='d' />
         </a>
         <button
-          class='navbar-toggler navbar-toggler-right'
+          className='navbar-toggler navbar-toggler-right'
           type='button'
           data-toggle='collapse'
           data-target='#navbarResponsive'
@@ -17,32 +18,27 @@ function Navbar(props) {
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
-          Menu<i class='fas fa-bars ml-1'></i>
+          Menu<i className='fas fa-bars ml-1'></i>
         </button>
-        <div class='collapse navbar-collapse' id='navbarResponsive'>
-          <ul class='navbar-nav text-uppercase ml-auto'>
-            <li class='nav-item'>
-              <a class='nav-link js-scroll-trigger' href='#services'>
-                Services
+        <div className='collapse navbar-collapse' id='navbarResponsive'>
+          <ul className='navbar-nav text-uppercase ml-auto'>
+            <li className='nav-item'>
+              <a className='nav-link js-scroll-trigger active' href='#home'>
+                Home
               </a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link js-scroll-trigger' href='#portfolio'>
-                Portfolio
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link js-scroll-trigger' href='#about'>
+            <li className='nav-item'>
+              <a className='nav-link js-scroll-trigger' href='#about'>
                 About
               </a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link js-scroll-trigger' href='#team'>
-                Team
+            <li className='nav-item'>
+              <a className='nav-link js-scroll-trigger' href='#portfolio'>
+                Portfolio
               </a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link js-scroll-trigger' href='#contact'>
+            <li className='nav-item'>
+              <a className='nav-link js-scroll-trigger word' href='#contact'>
                 Contact
               </a>
             </li>
