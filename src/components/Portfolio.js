@@ -1,22 +1,80 @@
 import React, { Component } from 'react';
 import Modal from './Modal';
-// import ProjectsData from './data/ProjectsData';
+// import Projects from './data/Projects';
 
 export default class Portfolio extends Component {
-  state = {
-    projects: [
-      {
-        id: 1,
-        title: 'Project One',
-        des: 'This is the first Project',
-      },
-      {
-        id: 2,
-        title: 'Project Two',
-        des: 'This is the second Project',
-      },
-    ],
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      projects: [
+        {
+          id: 1,
+          title: 'pro1',
+          des: 'this pro1',
+        },
+        {
+          id: 2,
+          title: 'pro2',
+          des: 'this pro2',
+        },
+        {
+          id: 3,
+          title: 'pro3',
+          des: 'this pro3',
+        },
+        {
+          id: 4,
+          title: 'pro4',
+          des: 'this pro4',
+        },
+        {
+          id: 5,
+          title: 'pro5',
+          des: 'this pro5',
+        },
+        {
+          id: 6,
+          title: 'pro6',
+          des: 'this pro6',
+        },
+      ],
+    };
+    this.projectLoop = this.projectLoop.bind(this);
+  }
+
+  projectLoop() {
+    return this.state.projects.map((project, id) => {
+      return (
+        <div className='col-lg-4 col-sm-6 mb-4' key={id}>
+          <div className='portfolio-item'>
+            <a
+              className='portfolio-link'
+              data-toggle='modal'
+              href='#portfolioModal'
+            >
+              <div className='portfolio-hover'>
+                <div className='portfolio-hover-content'>
+                  <i className='fas fa-plus fa-3x'></i>
+                </div>
+              </div>
+              <img
+                className='img-fluid'
+                src='assets/img/portfolio/01-thumbnail.jpg'
+                alt=''
+              />
+            </a>
+            <div className='portfolio-caption'>
+              <div className='portfolio-caption-heading'>{project.title}</div>
+              <div className='portfolio-caption-subheading text-muted'>
+                {project.des}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    });
+  }
+
   render() {
     return (
       //  Portfolio Grid
@@ -28,164 +86,8 @@ export default class Portfolio extends Component {
               Lorem ipsum dolor sit amet consectetur.
             </h3>
           </div>
-          <div className='row'>
-            <div className='col-lg-4 col-sm-6 mb-4'>
-              <div className='portfolio-item'>
-                <a
-                  className='portfolio-link'
-                  data-toggle='modal'
-                  href='#portfolioModal1'
-                >
-                  <div className='portfolio-hover'>
-                    <div className='portfolio-hover-content'>
-                      <i className='fas fa-plus fa-3x'></i>
-                    </div>
-                  </div>
-                  <img
-                    className='img-fluid'
-                    src='assets/img/portfolio/01-thumbnail.jpg'
-                    alt=''
-                  />
-                </a>
-                <div className='portfolio-caption'>
-                  <div className='portfolio-caption-heading'>Random</div>
-                  <div className='portfolio-caption-subheading text-muted'>
-                    Illustration
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className='col-lg-4 col-sm-6 mb-4'>
-              <div className='portfolio-item'>
-                <a
-                  className='portfolio-link'
-                  data-toggle='modal'
-                  href='#portfolioModal2'
-                >
-                  <div className='portfolio-hover'>
-                    <div className='portfolio-hover-content'>
-                      <i className='fas fa-plus fa-3x'></i>
-                    </div>
-                  </div>
-                  <img
-                    className='img-fluid'
-                    src='assets/img/portfolio/02-thumbnail.jpg'
-                    alt=''
-                  />
-                </a>
-                <div className='portfolio-caption'>
-                  <div className='portfolio-caption-heading'>Explore</div>
-                  <div className='portfolio-caption-subheading text-muted'>
-                    Graphic Design
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* <div className='col-lg-4 col-sm-6 mb-4'>
-              <div className='portfolio-item'>
-                <a
-                  className='portfolio-link'
-                  data-toggle='modal'
-                  href='#portfolioModal3'
-                >
-                  <div className='portfolio-hover'>
-                    <div className='portfolio-hover-content'>
-                      <i className='fas fa-plus fa-3x'></i>
-                    </div>
-                  </div>
-                  <img
-                    className='img-fluid'
-                    src='assets/img/portfolio/03-thumbnail.jpg'
-                    alt=''
-                  />
-                </a>
-                <div className='portfolio-caption'>
-                  <div className='portfolio-caption-heading'>Finish</div>
-                  <div className='portfolio-caption-subheading text-muted'>
-                    Identity
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* <div className='col-lg-4 col-sm-6 mb-4 mb-lg-0'>
-              <div className='portfolio-item'>
-                <a
-                  className='portfolio-link'
-                  data-toggle='modal'
-                  href='#portfolioModal4'
-                >
-                  <div className='portfolio-hover'>
-                    <div className='portfolio-hover-content'>
-                      <i className='fas fa-plus fa-3x'></i>
-                    </div>
-                  </div>
-                  <img
-                    className='img-fluid'
-                    src='assets/img/portfolio/04-thumbnail.jpg'
-                    alt=''
-                  />
-                </a>
-                <div className='portfolio-caption'>
-                  <div className='portfolio-caption-heading'>Lines</div>
-                  <div className='portfolio-caption-subheading text-muted'>
-                    Branding
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* <div className='col-lg-4 col-sm-6 mb-4 mb-sm-0'>
-              <div className='portfolio-item'>
-                <a
-                  className='portfolio-link'
-                  data-toggle='modal'
-                  href='#portfolioModal5'
-                >
-                  <div className='portfolio-hover'>
-                    <div className='portfolio-hover-content'>
-                      <i className='fas fa-plus fa-3x'></i>
-                    </div>
-                  </div>
-                  <img
-                    className='img-fluid'
-                    src='assets/img/portfolio/05-thumbnail.jpg'
-                    alt=''
-                  />
-                </a>
-                <div className='portfolio-caption'>
-                  <div className='portfolio-caption-heading'>Southwest</div>
-                  <div className='portfolio-caption-subheading text-muted'>
-                    Website Design
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* <div className='col-lg-4 col-sm-6'>
-              <div className='portfolio-item'>
-                <a
-                  className='portfolio-link'
-                  data-toggle='modal'
-                  href='#portfolioModal6'
-                >
-                  <div className='portfolio-hover'>
-                    <div className='portfolio-hover-content'>
-                      <i className='fas fa-plus fa-3x'></i>
-                    </div>
-                  </div>
-                  <img
-                    className='img-fluid'
-                    src='assets/img/portfolio/06-thumbnail.jpg'
-                    alt=''
-                  />
-                </a>
-                <div className='portfolio-caption'>
-                  <div className='portfolio-caption-heading'>Window</div>
-                  <div className='portfolio-caption-subheading text-muted'>
-                    Photography
-                  </div>
-                </div>
-              </div>
-            </div> */}
-          </div>
+
+          <div className='row'>{this.projectLoop()}</div>
         </div>
         <Modal />
       </section>

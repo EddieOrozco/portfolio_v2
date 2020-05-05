@@ -7,7 +7,7 @@ class Modal extends Component {
       <div>
         <div
           className='portfolio-modal modal fade'
-          id='portfolioModal1'
+          id='portfolioModal'
           tabindex='-1'
           role='dialog'
           aria-hidden='true'
@@ -59,7 +59,7 @@ class Modal extends Component {
           </div>
         </div>
         {/* Modal 2 */}
-        <div
+        {/* <div
           className='portfolio-modal modal fade'
           id='portfolioModal2'
           tabindex='-1'
@@ -74,9 +74,9 @@ class Modal extends Component {
               <div className='container'>
                 <div className='row justify-content-center'>
                   <div className='col-lg-8'>
-                    <div className='modal-body'>
-                      {/* Project Details Go Here */}
-                      <h2 className='text-uppercase'>Project Name</h2>
+                    <div className='modal-body'> */}
+        {/* Project Details Go Here */}
+        {/* <h2 className='text-uppercase'>Project Name</h2>
                       <p className='item-intro text-muted'>
                         Lorem ipsum dolor sit amet consectetur.
                       </p>
@@ -111,9 +111,9 @@ class Modal extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- Modal 3--> */}
-        <div
+        {/* <div
           className='portfolio-modal modal fade'
           id='portfolioModal3'
           tabindex='-1'
@@ -128,9 +128,9 @@ class Modal extends Component {
               <div className='container'>
                 <div className='row justify-content-center'>
                   <div className='col-lg-8'>
-                    <div className='modal-body'>
-                      {/* <!-- Project Details Go Here--> */}
-                      <h2 className='text-uppercase'>Project Name</h2>
+                    <div className='modal-body'> */}
+        {/* <!-- Project Details Go Here--> */}
+        {/* <h2 className='text-uppercase'>Project Name</h2>
                       <p className='item-intro text-muted'>
                         Lorem ipsum dolor sit amet consectetur.
                       </p>
@@ -165,9 +165,9 @@ class Modal extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- Modal 4--> */}
-        <div
+        {/* <div
           className='portfolio-modal modal fade'
           id='portfolioModal4'
           tabindex='-1'
@@ -182,9 +182,9 @@ class Modal extends Component {
               <div className='container'>
                 <div className='row justify-content-center'>
                   <div className='col-lg-8'>
-                    <div className='modal-body'>
-                      {/* <!-- Project Details Go Here--> */}
-                      <h2 className='text-uppercase'>Project Name</h2>
+                    <div className='modal-body'> */}
+        {/* <!-- Project Details Go Here--> */}
+        {/* <h2 className='text-uppercase'>Project Name</h2>
                       <p className='item-intro text-muted'>
                         Lorem ipsum dolor sit amet consectetur.
                       </p>
@@ -219,9 +219,9 @@ class Modal extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- Modal 5--> */}
-        <div
+        {/* <div
           className='portfolio-modal modal fade'
           id='portfolioModal5'
           tabindex='-1'
@@ -236,9 +236,9 @@ class Modal extends Component {
               <div className='container'>
                 <div className='row justify-content-center'>
                   <div className='col-lg-8'>
-                    <div className='modal-body'>
-                      {/* <!-- Project Details Go Here--> */}
-                      <h2 className='text-uppercase'>Project Name</h2>
+                    <div className='modal-body'> */}
+        {/* <!-- Project Details Go Here--> */}
+        {/* <h2 className='text-uppercase'>Project Name</h2>
                       <p className='item-intro text-muted'>
                         Lorem ipsum dolor sit amet consectetur.
                       </p>
@@ -273,9 +273,9 @@ class Modal extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- Modal 6--> */}
-        <div
+        {/* <div
           className='portfolio-modal modal fade'
           id='portfolioModal6'
           tabindex='-1'
@@ -290,9 +290,9 @@ class Modal extends Component {
               <div className='container'>
                 <div className='row justify-content-center'>
                   <div className='col-lg-8'>
-                    <div className='modal-body'>
-                      {/* <!-- Project Details Go Here--> */}
-                      <h2 className='text-uppercase'>Project Name</h2>
+                    <div className='modal-body'> */}
+        {/* <!-- Project Details Go Here--> */}
+        {/* <h2 className='text-uppercase'>Project Name</h2>
                       <p className='item-intro text-muted'>
                         Lorem ipsum dolor sit amet consectetur.
                       </p>
@@ -327,7 +327,7 @@ class Modal extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
