@@ -7,7 +7,8 @@ function Navbar(props) {
     <nav className='navbar navbar-expand-lg navbar-dark fixed-top' id='mainNav'>
       <div className='container'>
         <a className='navbar-brand js-scroll-trigger' href='#page-top'>
-          <img src='assets/img/navbar-logo.svg' alt='d' />
+          Eduardo Orozco
+          {/* <img src='assets/img/navbar-logo.svg' alt='d' /> */}
         </a>
         <button
           className='navbar-toggler navbar-toggler-right'
